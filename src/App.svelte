@@ -1,5 +1,6 @@
 <script>
     import User from "./User.svelte"
+    import UserSearch from "./UserSearch.svelte"
     import { onMount } from 'svelte'
     let users;
 
@@ -31,6 +32,7 @@
 
 
 <main>
+    <UserSearch />
     {#if users}
         <ul>
         {#each users as user}
